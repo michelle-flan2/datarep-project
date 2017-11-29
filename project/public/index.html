@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="Flatfy Free Flat and Responsive HTML5 Template ">
+    <meta name="author" content="">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom Google Web Font -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'>
+	
+    <!-- Custom CSS-->
+    <link href="css/general.css" rel="stylesheet">
+	
+	 <!-- Owl-Carousel -->
+    <link href="css/custom.css" rel="stylesheet">
+	<link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
+	
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="css/magnific-popup.css"> 
+	
+	<script src="js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
+
+<title>First Aid</title>
+	
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $("#ABCbutton").click(function(){
+        $.get("/ABC", function(data, status){
+		$("#firstaid").text(data);
+        });
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("#FBOAbutton").click(function(){
+    $.get("/FBOAhtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#LOCPRESSbutton").click(function(){
+    $.get("/LOCPRESShtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#PEARLbutton").click(function(){
+    $.get("/PEARLhtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#PBOAbutton").click(function(){
+    $.get("/PBOAhtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#REDbutton").click(function(){
+    $.get("/REDhtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#RICEbutton").click(function(){
+    $.get("/RICEhtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#SAMPLEbutton").click(function(){
+    $.get("/SAMPLEhtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+$(document).ready(function(){
+    $("#WARTSbutton").click(function(){
+    $.get("/WARTShtml", function(data, status){
+		$("#firstaid").html(data);
+        });
+  });
+});
+
+
+
+</script>
+   
+  <body>
+   
+   <!-- NavBar-->
+	<nav class="navbar-default" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+				<a class="navbar-brand" href="#home">Irish Gyroplanes</a>
+			</div>
+			
+
+			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					
+					<li class="menuItem"><a href="#one">The First 3</a></li>
+					<li class="menuItem"><a href="#two">The Second 3</a></li>
+					<li class="menuItem"><a href="#three">The Last 3</a></li>
+					
+				</ul>
+			</div>
+			<img class="img-responsive2"       
+            src="photo.jpg" width="100" height="75"></a>
+            </div>
+		   
+		</div>
+	</nav> 
+	
+	
+	<h1> First Aid Acronym List</h1> 
+   <div id = "firstaid">  </div>
+   
+   <img src="aid.jpg"></a>
+            </div>
+<p>This site contains a list of First acronyms. These First aid acronyms are a great way to remember key emergency information and is a useful tool when teaching first aid or preparing for a first aid exam/test. Click on an acronym to find what it means. There are 3 containers each with 3 acronyms, click on the nav bar to get to a certain section immediately</p>
+<p> Just click on the button and the paragraph will appear over the picture above</p>
+ 
+
+<!--first-->
+<div id="one" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Here are three</h2>
+				<p class="lead" style="margin-top:0"></p>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="img/icon/airplane.svg" >
+				  <h3>ABC</h3>
+				  <input type="submit" name="ABC" id="ABCbutton" value="Update ABC">
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/speed.svg" >
+				   <h3>FBOA</h3>
+				    <input type="submit" name="FBOA" id="FBOAbutton" value="Update FBOA">
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/compas.svg" >
+				   <h3>LOCPRESS</h3>
+					<input type="submit" name="LOCPRESS" id="LOCPRESSbutton" value="Update LOCPRESS">
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			</div>
+			</div><!-- /.row -->
+		</div>
+	</div>
+	
+	<!--sec-->
+	<div id="two" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Here's Some More</h2>
+				<p class="lead" style="margin-top:0"></p>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="img/icon/airplane.svg" >
+				  <h3>PEARL</h3>
+				 <input type="submit" name="PEARL" id="PEARLbutton" value="Update PEARL">
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/speed.svg" >
+				   <h3>PBOA</h3>
+				   <input type="submit" name="PBOA" id="PBOAbutton" value="Update PBOA">
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/compas.svg" >
+				   <h3>WARTS</h3>
+					<input type="submit" name="WARTS" id="WARTSbutton" value="Update WARTS">
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			</div>
+			</div><!-- /.row -->
+		</div>
+	</div>
+	
+	<!--3-->
+	<div id="three" class="content-section-b" style="border-top: 0">
+		<div class="container">
+
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2>Last One</h2>
+				<p class="lead" style="margin-top:0"></p>
+				
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img class="rotate" src="img/icon/airplane.svg" >
+				  <h3>RICE</h3>
+				 <input type="submit" name="RICE" id="RICEbutton" value="Update RICE">
+
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/speed.svg" >
+				   <h3>SAMPLE</h3>
+				   <input type="submit" name="SAMPLE" id="SAMPLEbutton" value="Update SAMPLE">
+				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+				<div class="col-sm-4 wow fadeInDown text-center">
+				  <img  class="rotate" src="img/icon/compas.svg" >
+				   <h3>RED</h3>
+					<input type="submit" name="RED" id="REDbutton" value="Update RED">
+				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
+				</div><!-- /.col-lg-4 -->
+				
+			</div><!-- /.row -->
+			</div>
+			</div><!-- /.row -->
+		</div>
+	</div>
+	
+	
+ <div id = "firstaiddesc">
+ 
+ 
+</div>
+   </body> 
+   </html>
